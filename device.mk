@@ -544,6 +544,10 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
     Tag
+    
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-xd
 
 # RcsService
 PRODUCT_PACKAGES += \
@@ -616,4 +620,4 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.nonblocking_ffs=0 \
-    persist.adb.nonblocking_ffs=0
+    persist.adb.nonblocking_ffs=
