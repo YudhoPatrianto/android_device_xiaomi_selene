@@ -17,4 +17,14 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The list of components which should be automatically disabled for a specific package. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
+    </string-array>
 </resources>
