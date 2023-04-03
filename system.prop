@@ -46,6 +46,7 @@ sys.fp.miui.token=0
 persist.sys.fuse.passthrough.enable=true
 
 # RIL
+persist.sys.radio.force_lte_ca=true
 persist.sys.fflag.override.settings_provider_model=false
 
 # IPO
