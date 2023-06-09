@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -42,16 +42,20 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_INCLUDE_STOCK_ARCORE := true
+
+#Google Apps Flags
 WITH_GMS := true
 WITH_GAPPS := true
 
-#ROM Flags
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := YudhoPatrianto
+#Maintainer Flags
+CHERISH_BUILD_TYPE := UNOFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=YudhoPatrianto
+
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := blaze_selene
+PRODUCT_NAME := cherish_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_MODEL := Redmi 10
@@ -59,7 +63,7 @@ PRODUCT_MODEL := Redmi 10
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := selene
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="sunfish-user 13 TP1A.221105.002 9080065 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="raven-user-13-TP1A.220624.021-2022083000-release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/sunfish/sunfish:13/TP1A.221105.002/9080065:user/release-keys"
+BUILD_FINGERPRINT := "google/raven/raven:13/TP1A.220624.021/2022083000:user/release-keys"
