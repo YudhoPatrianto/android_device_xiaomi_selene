@@ -155,6 +155,9 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Aperture
+
+PRODUCT_PACKAGES += \
+    GrapheneOSCamera
     
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
