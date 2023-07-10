@@ -63,7 +63,7 @@ PRODUCT_MODEL := Redmi 10
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := selene
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="raven-user-13-TP1A.220624.021-2022083000-release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="selene-user 13 TP1A.220624.014 V14.0.2.0.TKUCNXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/raven/raven:13/TP1A.220624.021/2022083000:user/release-keys"
+BUILD_FINGERPRINT := "Redmi/selene/selene:13/TP1A.220624.014/V14.0.2.0.TKUCNXM:user/release-keys"
