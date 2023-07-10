@@ -43,6 +43,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 
+#Phone Stuff
+TARGET_USES_BLUR := false
+
 #Google Apps Flags
 WITH_GMS := true
 WITH_GAPPS := true
