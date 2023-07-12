@@ -40,7 +40,6 @@ ro.opengles.version=196610
 persist.sys.dalvik.multithread=true
 
 # Camera
-ro.product.system.manufacturer=Xiaomi
 ro.product.manufacturer=Xiaomi
 ro.build.characteristics=default
 persist.camera.dualcal.state=-1
