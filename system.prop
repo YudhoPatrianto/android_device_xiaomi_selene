@@ -3,6 +3,13 @@ audio_para_version=J15S-Audiopara-V19-20200420
 ro.config.vc_call_vol_steps=9
 ro.audio.silent=0
 ro.camera.sound.forced=0
+ro.audio.usb.period_us=20375
+af.resampler.quality=7
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.tbwcheat=0
+persist.bluetooth.sbc_hd_higher_bitrate=1
 
 # Brand
 Build.BRAND=MTK
@@ -23,16 +30,23 @@ pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=quicken
 
+# Blur
+persist.sys.sf.disable_blurs=1
+
 # Display
 ro.opengles.version=196610
-vendor.display.svi.config_path=/system/etc/SVIConfig.xml
-debug.svi.logs=1
-debug.als.logs=1
-config.svi.xml=1
-config.svi.xml.print=1
+
+#DEX
+persist.sys.dalvik.multithread=true
 
 # Camera
+ro.product.system.manufacturer=Xiaomi
+ro.product.manufacturer=Xiaomi
+ro.build.characteristics=default
 persist.camera.dualcal.state=-1
+ro.miui.notch=1
+ro.hardware.camera=xiaomi
+ro.com.google.lens.oem_camera_package=com.android.camera
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.lineageos.aperture
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.lineageos.aperture
 
@@ -55,7 +69,9 @@ ro.kernel.zio=38,108,105,16
 persist.sys.mdlog_dumpback=2
 
 # Media
+ro.vendor.mtk_flv_playback_support=1
 media.stagefright.thumbnail.prefer_hw_codecs=true
+vendor.mtk_thumbnail_optimization=true
 
 # Order
 ro.product.property_source_order=odm,vendor,product,system
@@ -93,5 +109,3 @@ wifi.tethering.interface=ap0
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
-
-
