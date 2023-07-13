@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -42,16 +42,24 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_INCLUDE_STOCK_ARCORE := true
+
+#Google Apps Flags
 WITH_GMS := true
 WITH_GAPPS := true
 
-#ROM Flags
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := YudhoPatrianto
+#Phone Flags
+IS_PHONE := true
+EVO_SIGNED := false
+
+
+
+#Maintainer Flags
+EVO_BUILD_TYPE := UNOFFICIAL
+EVO_MAINTAINER := YudhoPatrianto
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := blaze_selene
+PRODUCT_NAME := evolution_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_MODEL := Redmi 10
