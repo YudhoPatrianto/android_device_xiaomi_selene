@@ -50,6 +50,7 @@ WITH_GAPPS := true
 #Phone Flags
 IS_PHONE := true
 EVO_SIGNED := false
+TARGET_USES_BLUR := false
 
 
 
