@@ -46,6 +46,7 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 #Google Apps Flags
 WITH_GMS := true
 WITH_GAPPS := true
+TARGET_USES_PICO_GAPPS := true
 
 #Phone Flags
 IS_PHONE := true
