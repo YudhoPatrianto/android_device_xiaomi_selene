@@ -43,6 +43,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_EXCLUDES_AUDIOFX := true
+USE_LEGACY_BOOTANIMATION := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
