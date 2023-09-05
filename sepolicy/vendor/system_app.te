@@ -1,0 +1,16 @@
+allow system_app proc_pagetypeinfo:file r_file_perms;
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file r_file_perms;
+
+# FM Radio
+get_prop(system_app, vendor_mtk_wmt_prop)
+get_prop(system_app, vendor_mtk_default_prop)
+
+# allow system apps to read battery status
+r_dir_file(system_app, sysfs_battery_supply)
+
+# Fast Charging
+allow system_app vendor_sysfs_battery_supply:dir { search };
+allow system_app vendor_sysfs_battery_supply:file { getattr open read };
+
+r_dir_file(system_app, vendor_sysfs_battery_supply)
