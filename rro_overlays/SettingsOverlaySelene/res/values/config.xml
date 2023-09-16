@@ -22,6 +22,9 @@
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">true</bool>
 
+    <!-- Whether device supports increased touch sensitvity -->
+    <bool name="config_show_touch_sensitivity">true</bool>
+
     <integer-array name="color_mode_ids">
     <item>0</item>
     <item>-1</item>
