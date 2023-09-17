@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CherishOS stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common XdroidOSS-Pixel stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -30,10 +30,15 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-#CherishOS Flags
-CHERISH_BUILD_TYPE := UNOFFICIAL
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=YudhoPatrianto
+#Xdroid Stuff
+XDROID_MAINTAINER := YudhoPatrianto
+XDROID_BOOT := 1080
+TARGET_ENABLE_BLUR := false
+
+# GoogleApps Stuff
+WITH_GMS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
