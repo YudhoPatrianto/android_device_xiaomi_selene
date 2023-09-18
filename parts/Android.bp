@@ -9,7 +9,8 @@ android_app {
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
-@@ -14,8 +17,12 @@ android_app {
+    certificate: "platform",
+    platform_apis: true,
     system_ext_specific: true,
     privileged: true,
 
@@ -18,3 +19,6 @@ android_app {
     ],
 
     optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
