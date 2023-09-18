@@ -38,6 +38,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_USES_PICO_GAPPS := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
