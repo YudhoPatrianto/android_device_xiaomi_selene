@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CherishOS stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common ProjectElixir stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -28,16 +28,36 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
 
-#CherishOS Flags
-CHERISH_BUILD_TYPE := UNOFFICIAL
+# Camera
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_BUILD_GRAPHENE_CAMERA := true
+
+# GoogleApps Stuff
+WITH_GMS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_USES_MINI_GAPPS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# ProjectElixir Stuff
+TARGET_INCLUDE_PIXEL_CHARGER := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+
+# ProjectElixir Maintainer Stuff
+ELIXIR_BUILD_TYPE := UNOFFICIAL
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+ELIXIR_MAINTAINER := Yudho Patrianto
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=YudhoPatrianto
+    ro.elixir.maintainer="Yudho Patrianto (YudhoPRJKT)"
+    org.elixir.device=Redmi 10
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := cherish_selene
+PRODUCT_NAME := aosp_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 10
