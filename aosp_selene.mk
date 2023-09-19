@@ -48,12 +48,8 @@ EXTRA_UDFPS_ANIMATIONS := true
 
 
 # ProjectElixir Maintainer Stuff
-ELIXIR_BUILD_TYPE := UNOFFICIAL
 CUSTOM_BUILD_TYPE := UNOFFICIAL
 ELIXIR_MAINTAINER := Yudho Patrianto
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.elixir.maintainer="Yudho Patrianto (YudhoPRJKT)"
-    org.elixir.device=Redmi 10
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
