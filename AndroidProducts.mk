@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/cherish_selene.mk
+   $(LOCAL_DIR)/asop_selene.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_selene-user \
-    cherish_selene-userdebug \
-    cherish_selene-eng
+    asop_selene-user \
+    asop_selene-userdebug \
+    asop_selene-eng
