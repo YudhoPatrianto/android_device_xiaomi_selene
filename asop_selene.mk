@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CherishOS stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common FireDroid stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -28,16 +28,28 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
 
-#CherishOS Flags
-CHERISH_BUILD_TYPE := UNOFFICIAL
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=YudhoPatrianto
+# FireDroid Stuff
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# FireDroid Maintainer Stuff
+FIREDROID_MAINTAINER := YudhoPatrianto
+
+# FireDroid BuildType Stuff
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+
+# GoogleApps Stuff
+WITH_GMS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := cherish_selene
+PRODUCT_NAME := aosp_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 10
