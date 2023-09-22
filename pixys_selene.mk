@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common CherishOS stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common PixysOS stuff
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -28,16 +28,24 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# GoogleApps Flags
+WITH_GMS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+
+# Pixys Device Flags
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-#CherishOS Flags
-CHERISH_BUILD_TYPE := UNOFFICIAL
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=YudhoPatrianto
+# Pixys Maintainer Flags
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+PIXYS_MAINTAINER := YudhoPatrianto
+
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := cherish_selene
+PRODUCT_NAME := pixys_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 10
