@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
     BesLoudness \
     MtkInCallService
 
+# PowerOfAlarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm 
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     $(DEVICE_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -199,6 +203,11 @@ PRODUCT_COPY_FILES += \
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
+export BUILD_USERNAME=raizel
+export BUILD_HOSTNAME=acex88     
+export TARGET_DISABLE_EPPE=true  
+export KBUILD_BUILD_USER=raizel    
+export KBUILD_BUILD_HOST=acex88
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
