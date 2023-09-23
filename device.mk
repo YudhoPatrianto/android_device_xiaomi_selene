@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     audio.primary.default \
+    audio.primary.mt6768 \
     audio.r_submix.default \
     audio.usb.default \
     audio_policy.stub \
