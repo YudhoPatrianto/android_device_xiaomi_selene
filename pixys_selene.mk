@@ -40,7 +40,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Pixys Maintainer Flags
 CUSTOM_BUILD_TYPE := UNOFFICIAL
-PIXYS_MAINTAINER := YudhoPatrianto
+
 
 
 ## Device identifier. This must come after all inclusions
