@@ -200,11 +200,6 @@ PRODUCT_COPY_FILES += \
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
-export BUILD_USERNAME=raizel
-export BUILD_HOSTNAME=acex88     
-export TARGET_DISABLE_EPPE=true  
-export KBUILD_BUILD_USER=raizel    
-export KBUILD_BUILD_HOST=acex88
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
