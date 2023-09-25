@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
+# No Display Cutout
+PRODUCT_PACKAGES += \ 
+    no-display-cutout \
+
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.selene
