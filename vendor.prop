@@ -4,6 +4,8 @@ persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
 
+# Refresh Rate Video
+debug.sf.frame_rate_multiple_threshold=60
 # Apex
 ro.apex.updatable=true
 
@@ -564,3 +566,4 @@ persist.log.tag.BufferQueueProducer=S
 persist.log.tag.SurfaceControl=S
 persist.log.tag.GraphicBuffer=S
 persist.log.tag.lsc_nvram=S
+
