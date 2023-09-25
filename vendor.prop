@@ -156,6 +156,7 @@ ro.carrier=unknown
 ro.hardware.fp.sideCap=true
 ro.vendor.mtk_shutdown_support=0
 vendor.camera.mdp.cz.enable=1
+ro.vendor.perf.scroll_opt
 dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 ro.lmk.psi_complete_stall_ms=70
