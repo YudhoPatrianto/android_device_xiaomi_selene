@@ -26,9 +26,6 @@ cc_library_shared {
     header_libs: [
         "generated_kernel_headers",
     ],  
-    header_libs: [
-        "generated_kernel_headers",
-    ],
     srcs: [
         "Power.cpp",
     ],
