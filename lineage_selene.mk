@@ -37,6 +37,13 @@ RISSING_BUILDTYPE := COMMUNITY
 # Rising Device Flags
 RISING_CHIPSET := mt6768
 
+# GoogleApps Flags
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
 PRODUCT_NAME := lineage_selene
