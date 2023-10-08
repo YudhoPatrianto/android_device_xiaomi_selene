@@ -324,7 +324,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3 \
     android.hardware.power@1.3.vendor \
-    android.hardware.power-service.mediatek-libperfmgr
+    android.hardware.power-service.mediatek-libperfmgr \
     android.hardware.power-service-mediatek
     
 PRODUCT_COPY_FILES += \
