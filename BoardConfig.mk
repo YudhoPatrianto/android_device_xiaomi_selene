@@ -205,3 +205,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Security patch date
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/input_suspend
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
