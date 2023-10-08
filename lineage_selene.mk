@@ -44,6 +44,9 @@ TARGET_USE_GOOGLE_TELEPHONY := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
+# Blur
+TARGET_ENABLE_BLUR := false
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
 PRODUCT_NAME := lineage_selene
