@@ -34,6 +34,9 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 RISING_MAINTAINER := YudhoPatrianto
 RISSING_BUILDTYPE := COMMUNITY
 
+# Rising Device Flags
+RISING_CHIPSET := mt6768
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
 PRODUCT_NAME := lineage_selene
