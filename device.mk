@@ -261,7 +261,11 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     libpcap.vendor
-    
+
+# Overlays
+DEVICE_PACKAGES_OVERLAY += \
+    $(DEVICE_PATH)/overlay
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
