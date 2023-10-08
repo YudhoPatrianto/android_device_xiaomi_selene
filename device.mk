@@ -430,7 +430,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/xiaomi 
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySelene \
