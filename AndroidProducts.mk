@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/blaze_selene.mk
+   $(LOCAL_DIR)/lineage_selene.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_selene-user \
-    blaze_selene-userdebug \
-    blaze_selene-eng
+    lineage_selene-user \
+    lineage_selene-userdebug \
+    lineage_selene-eng
