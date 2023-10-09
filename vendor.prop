@@ -1,3 +1,6 @@
+# Apex
+ro.apex.updatable=false
+
 # ADB on boot
 persist.service.adb.enable=1
 persist.service.debuggable=1
