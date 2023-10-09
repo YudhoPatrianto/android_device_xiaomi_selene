@@ -16,9 +16,6 @@
 
 DEVICE_PATH := device/xiaomi/selene
 
-# Apex
-OVERRIDE_TARGET_FLATTEN_APEX := true
-
 # A/B
 AB_OTA_UPDATER := true
 BOARD_USES_RECOVERY_AS_BOOT := true
