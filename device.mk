@@ -627,4 +627,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.adb.nonblocking_ffs=0 \
     ro.adb.secure=0 \
     ro.debuggable=1 \
-    persist.sys.usb.config=mtp,adb
+    persist.sys.usb.config=adb
+
