@@ -1,9 +1,3 @@
-# ADB on boot
-persist.service.adb.enable=1
-persist.service.debuggable=1
-persist.sys.usb.config=mtp,adb
-ro.adb.secure=0
-
 # Refresh Rate Video
 debug.sf.frame_rate_multiple_threshold=60
 # Apex
