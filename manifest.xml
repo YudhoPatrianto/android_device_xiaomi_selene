@@ -232,13 +232,6 @@
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
         <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
     </hal>
-    <hal format="aidl">
-        <name>vendor.lineage.health</name>
-        <interface>
-            <name>IChargingControl</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.apmonitor</name>
         <transport>hwbinder</transport>
