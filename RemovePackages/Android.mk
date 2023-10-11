@@ -1,3 +1,6 @@
+LOCAL_PATH := $(call my_dir)
+
+include $(CLEAR_VARS)
 LOCAL_OVERRIDES_PACKAGES := Aperture AmbientSensePrebuilt YouTube Maps Drive
 LOCAL_OVERRIDES_PACKAGES += Photos
 LOCAL_OVERRIDES_PACKAGES += Google
