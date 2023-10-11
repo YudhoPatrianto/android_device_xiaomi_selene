@@ -104,3 +104,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # Logtag
 persist.log.tag.OpenGLRenderer=S
+
+# Blur
+ro.sf.blurs_are_expensive=0
+ro.surface_flinger.supports_background_blur=0
