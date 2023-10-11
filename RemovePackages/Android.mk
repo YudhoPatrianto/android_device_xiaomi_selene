@@ -1,10 +1,3 @@
-LOCAL_PATH := $(call my-dir)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := RemovePackages
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := AdaptiveVPNPrebuilt
 LOCAL_OVERRIDES_PACKAGES := Aperture AmbientSensePrebuilt YouTube Maps Drive
 LOCAL_OVERRIDES_PACKAGES += Photos
 LOCAL_OVERRIDES_PACKAGES += Google
