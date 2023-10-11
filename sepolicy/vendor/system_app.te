@@ -17,6 +17,3 @@ r_dir_file(system_app, vendor_sysfs_battery_supply)
 
 # Allow XiaomiParts write thermals
 allow system_app sysfs_thermal:file rw_file_perms;
-
-# Battery Health
-r_dir_file(system_app sysfs_battery_supply) 
