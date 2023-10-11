@@ -7,7 +7,7 @@ get_prop(system_app, vendor_mtk_wmt_prop)
 get_prop(system_app, vendor_mtk_default_prop)
 
 # allow system apps to read battery status
-r_dir_file(system_app, sysfs_battery_supply)
+r_dir_file(system_app, sysfs_battery_supply);
 
 # Fast Charging
 allow system_app vendor_sysfs_battery_supply:dir { search };
