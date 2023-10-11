@@ -955,9 +955,6 @@ on boot
 
     chown system system /sys/class/thermal/thermal_message/sconfig
 
-# Lineage Health
-    chown system system /sys/class/power_supply/battery/input_suspend
-
 # Stop bootprof
 on property:sys.boot_completed=1
 
