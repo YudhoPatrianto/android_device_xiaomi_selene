@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Arrow stuff
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -30,17 +30,31 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-# ProjectBlaze Stuff
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := YudhoPatrianto
-WITH_GAPPS := true
+# RisingOS Maintainer Flags
+RISING_BUILD_TYPE := COMUNNITY
+RISING_MAINTAINER := YudhoPatrianto
+
+# Rising Devices Flags
+RISING_CHIPSET := mt6768
+
+# Camera Flags
+TARGET_BUILD_APERTURE_CAMERA := true
+
+# Blur Flags
+TARGET_ENABLE_BLUR := true
+
+# GoogleApps Flags
+WITH_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := blaze_selene
+PRODUCT_NAME := lineage_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi 10
+PRODUCT_MODEL := Redmi10
 PRODUCT_SYSTEM_NAME := selene
 PRODUCT_SYSTEM_DEVICE := selene
 
