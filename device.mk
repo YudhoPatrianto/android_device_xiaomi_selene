@@ -271,8 +271,8 @@ PRODUCT_PACKAGES += \
     XiaomiParts
 
 # Overlays
-DEVICE_PACKAGES_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
