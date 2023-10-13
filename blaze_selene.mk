@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Arrow stuff
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -30,14 +30,28 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-# ProjectBlaze Stuff
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := YudhoPatrianto
-WITH_GAPPS := true
+# HavocOS Maintainer Flags
+HAVOC_BUILD_TYPE := UNOFFICIAL
+HAVOC_MAINTAINER := YudhoPatrianto
+HAVOC_GROUP_URL := https://linktr.ee/YudhoPatrianto 
+
+# HavocOS Devices Flags
+TARGET_ENABLE_BLUR := true
+
+# HavocOS GoogleApps Flags
+WITH_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+# Aperture Flags
+TARGET_BUILD_APERTURE_CAMERA := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := blaze_selene
+PRODUCT_NAME := lineage_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 10
