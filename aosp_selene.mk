@@ -37,6 +37,14 @@ CUSTOM_BUILD_TYPE := COMMUNITY
 # Pixel Launcher Flags
 PIXEL_LAUNCHER_VARIANT := glance13
 
+# GoogleApps Flags
+WITH_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
 PRODUCT_NAME := aosp_selene
