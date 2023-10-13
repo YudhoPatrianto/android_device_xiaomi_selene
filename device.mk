@@ -614,7 +614,14 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0.vendor \
     android.hardware.usb@1.1 \
     android.hardware.usb@1.1.vendor
-    
+
+# ADB    
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.nonblocking_ffs=0 \
-    persist.adb.nonblocking_ffs=0
+    persist.adb.nonblocking_ffs=0 \
+    ro.adb.secure=0 \
+    ro.debuggable=1 \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 
+    
