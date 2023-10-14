@@ -233,6 +233,8 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
     $(DEVICE_PATH)/configs/permissions/manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/manifest.xml
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.android.cellbroadcastreceiver.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.android.cellbroadcastreceiver.xml
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.android.systemui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.android.systemui.xml 
 
 # IR
 PRODUCT_PACKAGES += \
