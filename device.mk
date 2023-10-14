@@ -232,6 +232,7 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+    $(DEVICE_PATH)/configs/permissions/manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/manifest.xml
 
 # IR
 PRODUCT_PACKAGES += \
