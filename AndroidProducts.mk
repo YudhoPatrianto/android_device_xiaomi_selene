@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/blaze_selene.mk
+   $(LOCAL_DIR)/xdroid_selene.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_selene-user \
-    blaze_selene-userdebug \
-    blaze_selene-eng
+    xdroid_selene-user \
+    xdroid_selene-userdebug \
+    xdroid_selene-eng

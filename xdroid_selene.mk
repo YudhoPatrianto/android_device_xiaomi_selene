@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Arrow stuff
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit some common Xdroid stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -20,24 +20,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from selene device makefile
 $(call inherit-product, device/xiaomi/selene/device.mk)
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2400
-
 # Some specific flags
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Devices Flags
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-# ProjectBlaze Stuff
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := YudhoPatrianto
-WITH_GAPPS := true
+# Xdroid Flags
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := YudhoPatrianto
+
+# GoogleApps Flags
+WITH_GMS := true
+$(call inherit-product, vendor/gms/gms_mini.mk)
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := blaze_selene
+PRODUCT_NAME := xdroid_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 10
