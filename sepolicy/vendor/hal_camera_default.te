@@ -1,0 +1,1 @@
+allow camera2_exported_camera_prop camera2_exported_camera_prop:file { open };
