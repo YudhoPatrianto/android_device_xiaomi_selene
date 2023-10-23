@@ -7,4 +7,3 @@ type debug_mtk_gpud_prop, property_type;
 type mtk_camera_prop, property_type;
 type deviceid_prop, property_type;
 type camera2_exported_camera_prop, property_type;
-vendor_internal_prop(vendor_fastcharge_prop)
