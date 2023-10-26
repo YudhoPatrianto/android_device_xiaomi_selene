@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Aperture
+    Camera2
     
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
