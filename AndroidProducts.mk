@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/blaze_selene.mk
+   $(LOCAL_DIR)/tequila_selene.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_selene-user \
-    blaze_selene-userdebug \
-    blaze_selene-eng
+    tequila_selene-user \
+    tequila_selene-userdebug \
+    tequila_selene-eng
