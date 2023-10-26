@@ -39,6 +39,9 @@ TARGET_ENABLE_BLUR := true
 # Alphadroid Stuff
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
+# AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # GoogleApps Stuff
 WITH_GAPPS := true
 TARGET_USE_GOOGLE_TELEPHONY := true
