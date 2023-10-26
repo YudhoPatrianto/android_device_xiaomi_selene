@@ -30,7 +30,6 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Alphadroid Maintainer Flags
-ALPHA_BUILD_TYPE := COMMUNITY
 ALPHA_MAINTAINER := YudhoPatrianto
 
 # Blur Flags
