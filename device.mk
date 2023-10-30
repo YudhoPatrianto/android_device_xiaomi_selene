@@ -429,6 +429,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/xiaomi
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySelene \
     DialerOverlaySelene \
