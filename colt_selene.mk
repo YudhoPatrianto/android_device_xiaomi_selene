@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common ColtOS stuff
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -30,9 +30,22 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
+# GoogleApps Flags
+WITH_GAPPS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+
+# ColtOS Maintainer Flags
+COLT_BUILD_TYPE  := UNOFFICIAL
+COLT_BUILD_MAINTAINER := YudhoPatrianto
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := aosp_selene
+PRODUCT_NAME := colt_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 10

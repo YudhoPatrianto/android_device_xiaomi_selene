@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/aosp_selene.mk
+   $(LOCAL_DIR)/colt_selene.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_selene-user \
-    aosp_selene-userdebug \
-    aosp_selene-eng
+    colt_selene-user \
+    colt_selene-userdebug \
+    colt_selene-eng
