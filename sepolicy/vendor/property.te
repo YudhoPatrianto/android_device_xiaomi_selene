@@ -1,0 +1,9 @@
+vendor_restricted_prop(vendor_fingerprint_prop);
+type vendor_audio_prop, property_type;
+type wmt_prop, property_type;
+type render_prop, property_type;
+type vendor_debug_prop, property_type;
+type debug_mtk_gpud_prop, property_type;
+type mtk_camera_prop, property_type;
+type deviceid_prop, property_type;
+type camera2_exported_camera_prop, property_type;
