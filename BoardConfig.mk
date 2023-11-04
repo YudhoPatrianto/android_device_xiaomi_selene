@@ -26,7 +26,6 @@ AB_OTA_PARTITIONS := \
     dtbo \
     product \
     system \
-    system_ext \
     vendor \
     vbmeta \
     vbmeta_system
@@ -145,7 +144,7 @@ BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
-BOARD_AVB_VBMETA_SYSTEM := product system system_ext
+BOARD_AVB_VBMETA_SYSTEM := product system
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 1
@@ -170,7 +169,6 @@ TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 BOARD_VNDK_VERSION := current
 
 # Non-SAR on Android 10 means the presence of stage-1 ramdisk
-TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 BOARD_ROOT_EXTRA_FOLDERS += metadata
