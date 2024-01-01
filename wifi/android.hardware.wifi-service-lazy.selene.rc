@@ -1,4 +1,5 @@
-service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi@1.0-service-lazy.selene
+service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi-service-lazy.selene
+    interface aidl android.hardware.wifi.IWifi/default
     oneshot
     disabled
     class hal
