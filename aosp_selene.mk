@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelOS stuff
+# Inherit some common HorizonDroid stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 #
@@ -23,21 +23,20 @@ $(call inherit-product, device/xiaomi/selene/device.mk)
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2400
-
-# Some specific flags
 TARGET_BOOT_ANIMATION_RES := 1080
+
+
+# HorizonDroid Maintainer Flags
+CUSTOM_BUILD_TYPE := Unofficial
+HORIZON_MAINTAINER := YudhoPatrianto
+
+# Another Stuff
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
-# PixelOS Stuff
-AOSP_MAINTAINER := YudhoPatrianto
-PIXELOS_MAINTAINER := YudhoPatrianto
-AOSP_BUILD_TYPE := UNOFFICIAL
-WITH_GAPPS := true
-WITH_GMS := true
-TARGET_ENABLE_BLUR := false
-
+TARGET_EXCLUDES_AUDIOFX := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
