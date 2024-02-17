@@ -132,8 +132,6 @@ BOARD_MAIN_PARTITION_LIST := \
     system \
     vendor
 
-# Wifi
-WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
