@@ -434,7 +434,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay-lineage \
+    $(DEVICE_PATH)/overlay-afterlife
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySelene \
