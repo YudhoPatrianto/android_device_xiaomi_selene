@@ -46,7 +46,7 @@ TARGET_EXCLUDES_AUDIOFX := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := aosp_selene
+PRODUCT_NAME := afterlife_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 10
