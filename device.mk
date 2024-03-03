@@ -198,6 +198,7 @@ PRODUCT_COPY_FILES += \
     
 # FM Radio
 PRODUCT_PACKAGES += \
+    com.android.fmradio \
     FMRadio
 
 # Gatekeeper
