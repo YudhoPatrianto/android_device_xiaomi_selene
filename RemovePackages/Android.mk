@@ -8,7 +8,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     Drive \
     Maps \
     PrebuiltGmail \
-    YouTube
+    YouTube \
+    Photos
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
