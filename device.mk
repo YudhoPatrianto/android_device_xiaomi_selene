@@ -388,6 +388,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Add Packages
+PRODUCT_PACKAGES += \
+    AddPackages
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
