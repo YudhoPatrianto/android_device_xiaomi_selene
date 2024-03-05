@@ -7,7 +7,7 @@ ifneq ($(filter selene selenes, $(TARGET_DEVICE)),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := AddPackages
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := Gallery/Gallery.apk
+LOCAL_SRC_FILES := Gallery.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
