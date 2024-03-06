@@ -1,19 +1,14 @@
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter selene selenes, $(TARGET_DEVICE)),)
-
-
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := AddPackages
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := Gallery.apk
+LOCAL_SRC_FILES := Gallery/Gallery.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_REQUIRED_MODULES := matcher_tah
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
+LOCAL_OVERRIDES_PACKAGES := Gallery
 include $(BUILD_PREBUILT)
 
 endif
