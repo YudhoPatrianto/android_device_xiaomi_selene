@@ -1,0 +1,10 @@
+android_app_import{
+    name: "AddPackages",
+    owner: "Google",
+    apk: "Gallery/Gallery.apk",
+    presigned: true,
+    dex_preopt:{
+        enabled: false,
+    }
+    product_spesific: true,
+}
