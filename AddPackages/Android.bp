@@ -6,5 +6,5 @@ android_app_import{
     dex_preopt:{
         enabled: false,
     },
-    product_spesific: true,
+    product_spesific: true
 }
