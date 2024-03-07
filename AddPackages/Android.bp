@@ -5,6 +5,6 @@ android_app_import{
     presigned: true,
     dex_preopt:{
         enabled: false,
-    }
+    },
     product_spesific: true,
 }
